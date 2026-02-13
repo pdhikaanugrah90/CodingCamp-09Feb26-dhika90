@@ -304,3 +304,28 @@ footer {
     color: #3b82f6;
     margin-bottom: 15px;
 }
+
+/* adjust untuk hp semoga bener */
+@media (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .visi-misi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kdk-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pesan-sec {
+        width: 95%;
+    }
+
+}

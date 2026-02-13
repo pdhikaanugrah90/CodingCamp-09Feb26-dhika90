@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const masukNama = document.getElementById("inputNama");
     const masukHai = document.getElementById("sayHai")
 
+    let simpanNama = localStorage.getItem("userName");
+
+    if (simpanNama) {
+        masukHai.innerText = "Hi, " + simpanNama;
+        masuk.style.display = "none";
+    }
+
     tblMasuk.addEventListener("click", function () {
 
         let nama = masukNama.value.trim();
@@ -14,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (nama === "") {
             alert("Tolong masukan nama anda");
         } else {
+            localStorage.setItem("userName", nama);
             masukHai.innerText = "Hi, " + nama ;
             masuk.style.display = "none";
         }
