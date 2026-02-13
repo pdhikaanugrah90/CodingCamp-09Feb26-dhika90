@@ -173,3 +173,129 @@ footer {
     text-align: center;
     padding: 0px;
 }
+
+/* ------------BAGIAN PROFILE------------ */
+
+/* bagian bar navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0f172a;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e2e8f0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+}
+
+
+/* bagian baner profile */
+.profile-banner {
+    height: 300px;
+    background: linear-gradient(to right, #1e293b, #0f172a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.profile-banner::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #3b82f6;
+    border-radius: 50%;
+    filter: blur(120px);
+}
+
+.profile-banner h1 {
+    font-size: 40x;
+}
+
+/*tentang company kodok */
+.our-company {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1e293b;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 15px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* visi dan misi */
+.visi-misi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.title-vimi {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.vm-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+
+.visi, .misi {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.visi, .misi {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+
+
+.visi:hover, .misi:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.visi h3, .misi h3 {
+    color: #3b82f6;
+    margin-bottom: 15px;
+}
