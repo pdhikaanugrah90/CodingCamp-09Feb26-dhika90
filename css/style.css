@@ -139,32 +139,37 @@ body {
 }
 
 /* bagian memberikan pesan pesan */
-.pesan {
-    padding: 80px 20px;
-    text-align: center;
+.pesan-sec {
+    padding: 60px 20px;
+    width: 80%;
+    margin: 50px auto;
+    background: #1e293b;
+    border-radius: 15px;
+    border: 1px solid #334155;
 }
 
-form {
-    max-width: 400px;
-    margin: auto;
+#formPesan {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-input, textarea {
+#formPesan input,
+#formPesan textarea {
     padding: 10px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
 }
 
-form button {
-    background-color: #3b82f6;
-    color: white;
+#formPesan button {
     padding: 10px;
+    background: #3b82f6;
     border: none;
+    border-radius: 8px;
+    color: white;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 /* bagian bawah */

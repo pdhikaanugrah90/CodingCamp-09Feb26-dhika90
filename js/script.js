@@ -1,3 +1,5 @@
+// BAGIAN WELCOME //
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const masuk = document.getElementById("welcome");
@@ -16,4 +18,29 @@ document.addEventListener("DOMContentLoaded", function () {
             masuk.style.display = "none";
         }
     });
+});
+
+// BAGIAN VALIDASI PESAN //
+
+document.getElementById("formPesan").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("nama").value;
+    let birthdate = document.getElementById("ultah").value;
+    let message = document.getElementById("pesanText").value;
+    let gender = document.querySelector('input[name="gender"]:checked');
+
+    if (name === "" || birthdate === "" || message === "" || !gender) {
+        alert("Tolong semua form nya disii!");
+        return;
+    }
+
+    document.getElementById("result").innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Birthdate:</strong> ${birthdate}</p>
+        <p><strong>Gender:</strong> ${gender.value}</p>
+        <p><strong>Message:</strong> ${message}</p>
+    `;
+
+    document.getElementById("messageForm").reset();
 });
