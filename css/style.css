@@ -10,6 +10,47 @@ body {
     color: #f1f5f9;
 }
 
+/* bagian welcome */
+.slmtDatang {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-content {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+.welcome-content button {
+    padding: 10px 20px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.welcome-content button:hover {
+    background: #2563eb;
+}
+
 /* bagian navigasi */
 .navigasi {
     width: 90%;
